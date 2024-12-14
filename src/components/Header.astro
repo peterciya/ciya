@@ -1,5 +1,5 @@
 ---
-const currentPath = Astro.currentPage.url.pathname;
+const currentPath = Astro.url.pathname;
 ---
 
 <header class="absolute inset-x-0 top-8 z-10 sm:top-12 lg:top-20 xl:top-16">
@@ -13,13 +13,13 @@ const currentPath = Astro.currentPage.url.pathname;
 				<nav>
 					<ul class="space-y-1 divide-y dark:divide-gray-800">
 						<li>
-							<a href="/" id="/" class="text-sm text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white target:font-medium target:text-gray-950 dark:target:text-white">Home</a>
+							<a href="/" id="/" class:list={currentPath === "/" && "font-medium text-gray-950 dark:text-white"} class="text-sm text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">Home</a>
 						</li>
 						<li>
-							<a href="/blog" id="blog" class="text-sm text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white target:font-medium target:text-gray-950 dark:target:text-white">Blog</a>
+							<a href="/blog" id="blog" class:list={currentPath.includes("/blog") && "font-medium text-gray-950 dark:text-white"} class="text-sm text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white target:font-medium target:text-gray-950 dark:target:text-white">Blog</a>
 						</li>
 						<li>
-							<a href="/about" id="about" class="text-sm text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white target:font-medium target:text-gray-950 dark:target:text-white">About me</a>
+							<a href="/about" id="about" class:list={currentPath === "/about" && "font-medium text-gray-950 dark:text-white"} class="text-sm text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white target:font-medium target:text-gray-950 dark:target:text-white">About me</a>
 						</li>
 					</ul>
 				</nav>
