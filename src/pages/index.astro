@@ -36,7 +36,7 @@ const projects = (await getCollection('projects')).sort(
 			<h2 class="text-gray-950 dark:text-white">Selected Works</h2>
 			<span class="text-sm tracking-wide text-gray-600 dark:text-gray-200">2010 -{'>'} 2023</span>
 
-			<div class="-mx-6 mt-8 space-y-24 sm:-mx-12 sm:mt-12 lg:-mx-24">
+			<div class="-mx-6 mt-8 space-y-12 sm:space-y-16 md:space-y-24 sm:-mx-12 sm:mt-12 lg:-mx-24">
 				{
 					projects.map((project) => (
 						<a class="block" href={`/projects/${project.id}`}>
