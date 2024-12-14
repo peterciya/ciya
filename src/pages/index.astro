@@ -2,7 +2,7 @@
 import Layout from "@layouts/Base.astro"
 import { getCollection } from 'astro:content';
 
-const posts = (await getCollection('blog')).sort(
+const projects = (await getCollection('projects')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 ---
@@ -31,25 +31,25 @@ const posts = (await getCollection('blog')).sort(
 		</div>
 	</section>
 
-	<section>
+	<section id="projects" class="scroll-mt-12">
 		<div class="mx-auto mt-16 max-w-4xl px-6 sm:mt-20 sm:pb-16 md:px-12 lg:mt-16">
 			<h2 class="text-gray-950 dark:text-white">Selected Works</h2>
 			<span class="text-sm tracking-wide text-gray-600 dark:text-gray-200">2010 -{'>'} 2023</span>
 
 			<div class="-mx-6 mt-8 space-y-24 sm:-mx-12 sm:mt-12 lg:-mx-24">
 				{
-					posts.map((post) => (
-						<a class="block" href={`/blog/${post.id}`}>
+					projects.map((project) => (
+						<a class="block" href={`/projects/${project.id}`}>
 							<img 
 								class="cover aspect-square origin-bottom rounded-xl object-cover opacity-0 transition-all duration-1000 [clip-path:inset(3%_3%_3%_3%_round_1rem)] scale-[1.05] hover:[clip-path:inset(1%_1%_1%_1%_round_1rem)] sm:aspect-video" 
-								src={post.data.heroImage}
-								alt={post.data.title}
+								src={project.data.heroImage}
+								alt={project.data.title}
 								height="1500" 
 								width="1500" 
 							/>
 							<div class="flex items-center justify-between px-6 py-2 sm:px-12 sm:py-4 lg:px-24">
 								<h3 class="text-gray-950 dark:text-white">
-									{post.data.title}
+									{project.data.title}
 								</h3>
 								<span class="text-sm text-gray-500 dark:text-gray-300">Web Design</span>
 							</div>
