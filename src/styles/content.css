@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    article h2, h3, h4, h5, h6{
+        @apply mb-6 font-semibold text-gray-950 dark:text-white
+    }
+
+    article h2{
+        @apply text-lg
+    }
+
+    article h3{
+        @apply text-base
+    }
+
+    article table{
+        @apply my-6 border-collapse table-auto w-full;
+    }
+
+    article thead{
+        @apply text-gray-950 dark:text-white bg-gray-100 dark:bg-gray-900/50
+    }
+
+    article thead tr{
+        @apply *:font-medium bg-gray-100 dark:bg-gray-900/50 border-y *:px-3 *:py-2 *:text-left
+    }
+
+    tr{
+        @apply *:border *:px-3 *:py-2 odd:bg-white even:bg-gray-100 dark:odd:bg-gray-900/50 dark:even:bg-gray-950 dark:*:border-gray-800
+    }
+
+    article p{
+        @apply mb-6 text-gray-700 dark:text-gray-300
+    }
+
+    article a{
+        @apply text-gray-950 underline decoration-lime-500 dark:text-white
+    }
+
+    article strong{
+        @apply font-semibold text-gray-950 dark:text-white
+    }
+
+    article ul{
+        @apply list-disc marker:text-gray-500 list-outside text-gray-700 pl-4 my-6 space-y-2 dark:text-gray-300
+    }
+
+    article ol{
+        @apply list-decimal marker:text-gray-500 list-outside text-gray-700 pl-4 my-6 space-y-2 dark:text-gray-300
+    }
+
+    article code{
+        @apply text-xs/5 border px-1.5 py-0.5 bg-gray-50 dark:bg-gray-900/50 dark:border-gray-800 dark:text-white rounded-lg
+    }
+}

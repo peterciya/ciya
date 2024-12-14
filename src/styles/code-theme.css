@@ -1,0 +1,127 @@
+/**
+ * prism.js tomorrow night eighties for JavaScript, CoffeeScript, CSS and HTML
+ * Based on https://github.com/chriskempson/tomorrow-theme
+ * @author Rose Pritchard
+ */
+
+ code[class*="language-"],
+ pre[class*="language-"] {
+     background: none;
+     text-align: left;
+     white-space: pre;
+     word-spacing: normal;
+     word-break: normal;
+     word-wrap: normal;
+     font-size: 12px;
+     line-height: 20px;
+ 
+     -moz-tab-size: 4;
+     -o-tab-size: 4;
+     tab-size: 4;
+ 
+     -webkit-hyphens: none;
+     -moz-hyphens: none;
+     -ms-hyphens: none;
+     hyphens: none;
+ 
+     @apply text-[#d4d4d4];
+ }
+ 
+ pre>code{
+     @apply !border-none !p-0 !bg-transparent !text-xs/5 !text-[#adada0] 
+ }
+ 
+ pre[class*="language-"] {
+     @apply mb-6 block border px-5 py-4 max-h-96 dark:shadow-gray-950/35 overflow-auto shadow rounded-lg bg-gray-900 dark:bg-gray-900 dark:border-gray-800
+ }
+ 
+ 
+ /* Code blocks */
+ pre[class*="language-"] {
+     overflow: auto;
+ }
+ 
+ /* Inline code */
+ :not(pre) > code[class*="language-"] {
+     white-space: normal;
+ }
+ 
+ .token.comment,
+ .token.block-comment,
+ .token.prolog,
+ .token.doctype,
+ .token.cdata {
+     @apply text-[#6A7480];
+ }
+ 
+ .token.punctuation {
+     @apply text-[#5C6E74];
+ }
+ 
+ .token.tag,
+ .token.attr-name,
+ .token.namespace,
+ .token.deleted {
+     @apply text-[#cacaca];
+ }
+ 
+ .token.function-name {
+     @apply text-[#ffaddd]
+ }
+ 
+ .token.boolean,
+ .token.function {
+     @apply text-[#dcddcf];
+ }
+ 
+ .token.number {
+     @apply text-[#B99365]
+ }
+ 
+ .token.property,
+ .token.class-name,
+ .token.constant,
+ .token.symbol {
+     @apply text-[#b8945a];
+ }
+ 
+ .token.selector,
+ .token.important,
+ .token.atrule,
+ .token.keyword,
+ .token.builtin {
+     @apply text-[#945353];
+ }
+ 
+ .token.string,
+ .token.char,
+ .token.attr-value,
+ .token.regex,
+ .token.variable {
+     @apply text-[#bc8e76];
+ }
+ 
+ .token.operator{
+     @apply text-[#7e8084];
+ }
+ .token.entity,
+ .token.url {
+     @apply text-[#DEC087];
+ }
+ 
+ .token.important,
+ .token.bold {
+     font-weight: bold;
+ }
+ .token.italic {
+     font-style: italic;
+ }
+ 
+ .token.entity {
+     cursor: help;
+ }
+ 
+ .token.inserted {
+     @apply text-[#DEC087];
+ }
+ 

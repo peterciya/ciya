@@ -33,9 +33,9 @@ Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sap
 
 ### Syntax
 
-```markdown
-![Alt text](./full/or/relative/path/of/image)
-```
+  ```md
+  ![Alt text](./full/or/relative/path/of/image)
+  ```
 
 ### Output
 
@@ -90,6 +90,7 @@ The blockquote element represents content that is quoted from another source, op
 | Italics   | Bold     | Code   |
 | --------- | -------- | ------ |
 | _italics_ | **bold** | `code` |
+| ui        | hey      | hello  |
 
 ## Code Blocks
 
