@@ -1,21 +1,28 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import Layout from "@layouts/Base.astro"
 ---
+<Layout>
+	<section>
+		<div class="mx-auto mb-16 max-w-4xl px-6 sm:pb-16 md:px-12">
+			<div class="flex h-full flex-col justify-between">
+				<div>
+					<h1 class="mt-16 text-3xl font-semibold text-gray-950 dark:text-white">Théo Balick</h1>
+					<p class="text-sm tracking-wide text-gray-700 dark:text-gray-300">Fullstack Developer</p>
 
-<!doctype html>
-<html lang="en" class="scroll-smooth">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body class="bg-white dark:bg-gray-950">
-		<Header />
-		<div aria-hidden="true" class="fixed inset-0 h-[200vh] origin-top scale-y-0 bg-gradient-to-b from-gray-100 from-80% to-transparent transition-transform duration-700 dark:scale-y-100 dark:from-zinc-950"></div>
-		<main class="pt-32">
-			
-		</main>
-		<Footer />
-	</body>
-</html>
+					<p class="my-12 text-sm text-gray-700 dark:text-gray-300 sm:w-2/3 xl:w-1/2">Full Stack Software Engineer (JavaScript technologies & java) | I believe in Jésus-Christ | I am a sports enthusiast...</p>
+					<div class="flex items-center gap-4">
+						<a href="mailto:hello@tailus.io" class="group inline-flex h-8 items-center gap-2.5 rounded-md bg-gray-950 text-white px-3 transition-all duration-300 hover:bg-gray-900 dark:bg-white dark:text-gray-950 dark:hover:bg-gray-200">
+							<span class="text-sm">Let's talk</span>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-3 w-3 opacity-60 transition duration-300 group-hover:rotate-45">
+								<path fill-rule="evenodd" stroke-width="2" d="M8.25 3.75H19.5a.75.75 0 01.75.75v11.25a.75.75 0 01-1.5 0V6.31L5.03 20.03a.75.75 0 01-1.06-1.06L17.69 5.25H8.25a.75.75 0 010-1.5z" clip-rule="evenodd" />
+							</svg>
+						</a>
+						<a href="/about" class="h-8 px-3 rounded-md flex items-center justify-center hover:bg-gray-100 dark:hover:bg-gray-800 text-sm text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">
+							About me
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</Layout>
