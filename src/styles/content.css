@@ -54,4 +54,8 @@
     article code{
         @apply text-xs/5 border px-1.5 py-0.5 bg-gray-50 dark:bg-gray-900/50 dark:border-gray-800 dark:text-white rounded-lg
     }
+
+    article img {
+        @apply my-6 rounded-lg
+    }
 }
