@@ -3,6 +3,7 @@ title: 'Shampoo Sales Analysis'
 description: 'A Machine Learning Time Series Problem'
 pubDate: 'November 2024'
 heroImage: /shampoo.webp
+projectType : ML
 ---
 
 ## Background & Objective
