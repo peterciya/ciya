@@ -3,6 +3,7 @@ title: 'Adventure Works'
 description: 'A Data visualization Project with Power BI'
 pubDate: 'August 2024'
 heroImage: /proj3.webp
+projectType : Lampe
 ---
 
 
