@@ -51,9 +51,9 @@ model_fit = model.fit(disp=False)
 - MSE : 26004.22 - Confirms that prediction errors are significant
 
 <div class="grid grid-cols-2 gap-1">
-    <img src="https://tailfolio.tailus.io/images/projects/foods/food-two.webp"/>
-    <img src="https://tailfolio.tailus.io/images/projects/foods/food-three.webp" />
-</div>
+    <img src="/proj12.webp"/>
+    <img src="/proj13.webp" />
+</div>                  
 
 
-[Link](https://github.com/peterciya/Ciya-Analytics/tree/main/Shampoo)
+[Github](https://github.com/peterciya/Ciya-Analytics/tree/main/Shampoo)
