@@ -3,11 +3,11 @@ title: 'Adventure Works'
 description: 'A Data visualization Project with Power BI'
 pubDate: 'August 2024'
 heroImage: /proj3.webp
-projectType : Lampe
+projectType : Data visualization
 ---
 
 
-## Problem
+## Problem  
 
 A business question in data analysis is one that aims to solve a problem or provide valuable insights for strategic decision-making within a company or organization. Below are the questions that this project answers:  
 

@@ -3,7 +3,7 @@ title: 'Demographic Data Analyzer'
 description: 'An Exploratory Data Analysis Project'
 pubDate: 'November 2024'
 heroImage: /proj21.webp
-projectType : Machine Learning
+projectType : Exploratory Data Analysis
 ---
 
 The dataset is derived from the 1994 Census database, containing 32,561 rows and 15 columns. The aim of this project is to demonstrate how to use the powerful Pandas library to analyze data by answering business questions.
